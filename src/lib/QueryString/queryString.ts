@@ -5,13 +5,13 @@ const keyValueToString = ([key, value]) => {
   return `${key}=${value}`;
 };
 
+//dijaojdsa
+
 export function queryString(object: Object) {
   if (Object.keys(object).length === 0) {
     throw new Error("Params is empty");
   }
-  return Object.entries(object)
-    .map(keyValueToString)
-    .join("&");
+  return Object.entries(object).map(keyValueToString).join("&");
 }
 
 export function parse(string: String) {
