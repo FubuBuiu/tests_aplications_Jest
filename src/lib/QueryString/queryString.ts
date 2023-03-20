@@ -5,8 +5,6 @@ const keyValueToString = ([key, value]) => {
   return `${key}=${value}`;
 };
 
-//dijaojdsa
-
 export function queryString(object: Object) {
   if (Object.keys(object).length === 0) {
     throw new Error("Params is empty");
